@@ -1,8 +1,8 @@
-;;; create-forms-control.el --- Use TSV file headers to create a control file for forms-mode
+;;; create-forms-control.el --- Use file headers to create a control file for forms-mode.el
 
 ;;; Commentary:
 ;; Automatically create a control file by looking a the
-;; header of a tsv file.  Prompts user for field separator, currently
+;; header of a file.  Prompts user for field separator, currently
 ;; limited to TAB or COMMA.
 
 ;;; Code:
