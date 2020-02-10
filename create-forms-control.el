@@ -11,8 +11,8 @@
   (interactive)
   (setq fname (read-file-name "Enter file name: "))
   (setq sep-choice (completing-read "Specify separator: " '("TAB" "COMMA")))
-  (cond ((eq sep-choice "TAB") (setq separator "\t")
-         (eq sep-choice "COMMA") (setq separator ",")))
+  (cond ((string= sep-choice "TAB") (setq separator "\t"))
+        ((string= sep-choice "COMMA") (setq separator ",")))
   (make-ctrl-file-body fname separator)
   )
 
