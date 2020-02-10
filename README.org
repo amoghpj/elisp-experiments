@@ -1,0 +1,1 @@
+This is a collection of short elisp files that I am currently experimenting with. Feedback welcome!
