@@ -19,9 +19,7 @@
 (defun make-ctrl-file-body (fname separator)
   "Make the control file.
 Takes arguments FNAME and SEPARATOR"
-  (message "fname: %s" fname)
   (setq colnames (get-header fname separator))
-  (message "%s" colnames)
   (setq numcols  (length colnames))
   (setq contents (format (concat
                                 "(setq forms-file \"%s\")\n"
@@ -31,7 +29,6 @@ Takes arguments FNAME and SEPARATOR"
                                 "(setq forms-format-list\n    (list"
                                 "\n   \"========%s========\\n\\n\"")
                                fname numcols fname))
-  (message "Headers are %s" colnames)
   (setq i 0)
   (while (< i numcols)
     (message "%s" i)
