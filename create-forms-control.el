@@ -25,7 +25,7 @@ Takes arguments FNAME and SEPARATOR"
                                 "(setq forms-file \"%s\")\n"
                                 "(setq forms-number-of-fields %s)\n"
                                 "(setq forms-read-only t)\n"
-                                "(setq forms-field-sep \"\\t\")\n"
+                                (concat "(setq forms-field-sep \"" separator "\")\n")
                                 "(setq forms-format-list\n    (list"
                                 "\n   \"========%s========\\n\\n\"")
                                fname numcols fname))
